@@ -3,10 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-#imgWrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 85vh;
-}
