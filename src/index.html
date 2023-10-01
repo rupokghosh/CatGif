@@ -5,26 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatGif</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <script src="index.js" defer></script>
 </head>
-<body>
-    <div id="header" class="flex justify-start p-4 h-2/5 bg-rose-400">
+<body class="flex-col justify-center bg-rose-100 font-pixel">
 
-        <h2 class="">Cat Gif Generator</h2>
+    <div id="header" class="flex justify-center items-center p-5 h-2/6 bg-rose-400">
+
+        <h1 class="font-bold text-xl" >Cat Gif Generator</h1>
 
     </div>
-    <div id="body">
+    <div id="imgWrapper" class="flex-col items-center justify-around py-10 gap-10">
+        <img  class="place-self-center" src="" alt="">
+        <button id="refreshBtn" class="rounded-lg bg-rose-400 m-2 py-4 px-2 font-medium hover:bg-pink-600">Refresh</button>
+    </div>
 
-        <div class=" grid border-r-2 border-solid" id="imgWrapper">
-            <img  class="place-self-center" src="" alt="">
+    <footer class="rounded-lg shadow m-4 bg-rose-700">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-around">
+            <span class="text-sm text-gray-100 sm:text-center">
+                <p class="font-mono">© 2023 Rupok Ghosh Adin™</p>
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-100 sm:mt-0">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 font-mono">Source Code</a>
+                </li>
+            </ul>
         </div>
-        
-    </div>
-    <div id="footer" class="bg-rose-950 text-rose-50 flex-col justify-center content-center">
+</footer>
 
-        <div>Rupok Ghosh Adin ©</div>
-        <a href="">Source Code</a>
-
-    </div>
-    
 </body>
 </html>
